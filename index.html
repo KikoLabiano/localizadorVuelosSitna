@@ -4,8 +4,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
     <style>
+        :root {
+            --radius: 50deg;
+        }
     .plane{
         background-image: url("data/icon-plane.png");
+        transform: rotate(var(--radius));
     }
     </style>
 </head>
@@ -14,7 +18,7 @@
     <canvas id="canvas">asdf</canvas>
 </body>
 <script>
-    
+    var radius="90deg";
     let map = new SITNA.Map("mapa", {
             crs: "EPSG:4326",
             initialExtent: [ // Coordenadas en grados decimales, porque el sistema de referencia espacial es WGS 84.
