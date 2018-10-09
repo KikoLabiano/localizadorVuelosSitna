@@ -1,0 +1,34 @@
+<html>
+<head>
+
+</head>
+<body>
+
+
+</body>
+<script>
+
+function fetchJSONFile(path) {
+  return new Promise((resolve)=>{
+    let httpRequest = new XMLHttpRequest();
+    httpRequest.onreadystatechange = function() {
+        if (httpRequest.readyState === 4) {
+            if (httpRequest.status === 200) {
+                resolve(JSON.parse(httpRequest.responseText));
+            }
+        }
+    };
+  httpRequest.open('GET', path);
+  httpRequest.send();
+});
+}
+
+// this requests the file and executes a callback with the parsed result once
+//   it is available
+fetchJSONFile('mockAPI/flights.json')
+.then((response) =>{
+  console.log(response);
+});
+
+</script>
+</html>
