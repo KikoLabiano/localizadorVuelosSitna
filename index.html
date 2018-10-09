@@ -48,6 +48,7 @@
         let aeropuertos = [];
         let aviones = [];
 
+        //"Mockeamos" los datos porque la API tiene una limitación de 100 llamadas
         //fetch('https://aviation-edge.com/v2/public/airportDatabase?key=924c89-5af179')
         fetchJSONFile("mockAPI/airports.json")
         // .then((response)=>{
@@ -71,8 +72,8 @@
             .then((vuelos)=>{
                 let latMin = 41.78912492257675;
                 let latMax = 43.55789822064767;
-                let longMin = -2.84820556640625;
-                let longMax = -0.32135009765625;
+                let longMin = -2.54820556640625;
+                let longMax = -0.52135009765625;
                 vuelosFiltrados = vuelos.filter(v=>v.geography.latitude >= latMin
                 && v.geography.latitude <= latMax
                 && v.geography.longitude >= longMin
@@ -95,7 +96,8 @@
                         "Origen": `${aeropOrigen.nombre} (${aeropOrigen.pais})`,
                         "Destino": `${aeropDest.nombre} (${aeropDest.pais})`,
                         "Altitud": vuelosFiltrados[i].geography.altitude,
-                        "Velocidad horizontal": vuelosFiltrados[i].speed.horizontal
+                        "Velocidad horizontal": vuelosFiltrados[i].speed.horizontal,
+                        "Localización": `Latitud: ${vuelosFiltrados[i].geography.latitude} - Longitud: ${vuelosFiltrados[i].geography.longitude}`
                     },
                     showPopup: true
                 });
@@ -134,13 +136,13 @@
         // })
 
         map.loaded(()=>{
-            let cnv = document.querySelector(".ol-unselectable");
+            //let cnv = document.querySelector(".ol-unselectable");
             // cnv.parent('myCanvas');
             // ellipse(50, 50, 50, 50);
-            var ctx=cnv.getContext("2d");
-            ctx.beginPath();
-            ctx.arc(100,75,50,0,2*Math.PI);
-            ctx.stroke();
+            // var ctx=cnv.getContext("2d");
+            // ctx.beginPath();
+            // ctx.arc(100,75,50,0,2*Math.PI);
+            // ctx.stroke();
         });
 
         function obtenerAeropuerto(codAeropuerto)
@@ -149,18 +151,19 @@
             return {"nombre": aeropuertoFiltrado[0].nombre, "pais": aeropuertoFiltrado[0].pais};
         }
 
-        function obtenerAvion(numRegAvion)
-        {
-            let avionFiltrado = aviones.filter(a => a.Codigo == codAeropuerto);
-            return {"nombre": avionFiltrado[0].nombre};
-        }
+        // function obtenerAvion(numRegAvion)
+        // {
+        //     let avionFiltrado = aviones.filter(a => a.Codigo == codAeropuerto);
+        //     return {"nombre": avionFiltrado[0].nombre};
+        // }
 
-        function fetchJSONFile(path) {
+        function fetchJSONFile(path) {            
           return new Promise((resolve)=>{
             let httpRequest = new XMLHttpRequest();
             httpRequest.onreadystatechange = function() {
                 if (httpRequest.readyState === 4) {
                     if (httpRequest.status === 200) {
+                        //Devolvemos el JSON en el resolve
                         resolve(JSON.parse(httpRequest.responseText));
                     }
                 }
