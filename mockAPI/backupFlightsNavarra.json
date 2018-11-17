@@ -1,0 +1,47 @@
+[{
+    "geography": {
+        "latitude": 33.6276,
+        "longitude": -84.38,
+        "altitude": 868.902,
+        "direction": 199
+    },
+    "speed": {
+        "horizontal": 359.094,
+        "isGround": 0,
+        "vertical": 0
+    },
+    "departure": {
+        "iataCode": "ATL",
+        "icaoCode": "KATL"
+    },
+    "arrival": {
+        "iataCode": "EYW",
+        "icaoCode": "KEYW"
+    },
+    "aircraft": {
+        "regNumber": "N308DE",
+        "icaoCode": "B737",
+        "icao24": "A33D5A",
+        "iataCode": "B737"
+    },
+    "airline": {
+        "iataCode": "DL",
+        "icaoCode": "DAL"
+    },
+    "flight": {
+        "iataNumber": "FR1816",
+        "icaoNumber": "RYR1816",
+        "number": "1816"
+    },
+    "system": {
+        "updated": "1539025494",
+        "squawk": "3167"
+    },
+    "status": "en-route"
+}, { "geography": { "latitude": 42.4928, "longitude": -1.8404, "altitude": 10972.8, "direction": 74 }, "speed": { "horizontal": 755.616, "isGround": 0, "vertical": 0 }, "departure": { "iataCode": "LIS", "icaoCode": "LPPT" }, "arrival": { "iataCode": "STR", "icaoCode": "EDDS" }, "aircraft": { "regNumber": "CSTPO", "icaoCode": "E190", "icao24": "49520F", "iataCode": "E190" }, "airline": { "iataCode": "TP", "icaoCode": "TAP" }, "flight": { "iataNumber": "TP524", "icaoNumber": "TAP524", "number": "524" }, "system": { "updated": "1539025836", "squawk": "515" }, "status": "en-route" },
+{ "geography": { "latitude": 42.7945, "longitude": -1.6213, "altitude": 11894.8, "direction": 207.46 }, "speed": { "horizontal": 899.568, "isGround": 0, "vertical": 0 }, "departure": { "iataCode": "BRU", "icaoCode": "EBBR" }, "arrival": { "iataCode": "CMN", "icaoCode": "GMMN" }, "aircraft": { "regNumber": "CNROD", "icaoCode": "B737", "icao24": "", "iataCode": "B737" }, "airline": { "iataCode": "AT", "icaoCode": "RAM" }, "flight": { "iataNumber": "AT831F", "icaoNumber": "RAM831F", "number": "831F" }, "system": { "updated": "1539025980", "squawk": "7166" }, "status": "en-route" },
+{ "geography": { "latitude": 43.0118, "longitude": -1.50343, "altitude": 11280.5, "direction": 207.5 }, "speed": { "horizontal": 913.098, "isGround": 0, "vertical": 0.32512 }, "departure": { "iataCode": "FEZ", "icaoCode": "GMFF" }, "arrival": { "iataCode": "CRL", "icaoCode": "EBCI" }, "aircraft": { "regNumber": "EIFIJ", "icaoCode": "B738", "icao24": "", "iataCode": "B738" }, "airline": { "iataCode": "FR", "icaoCode": "RYR" }, "flight": { "iataNumber": "FR2K", "icaoNumber": "RYR2K", "number": "2K" }, "system": { "updated": "1539025496", "squawk": "5524" }, "status": "en-route" },
+{ "geography": { "latitude": 43.1681, "longitude": -1.6538, "altitude": 11887.2, "direction": 232.16 }, "speed": { "horizontal": 914.652, "isGround": 0, "vertical": 0 }, "departure": { "iataCode": "GVA", "icaoCode": "LSGG" }, "arrival": { "iataCode": "OPO", "icaoCode": "LPPR" }, "aircraft": { "regNumber": "CSTTP", "icaoCode": "A319", "icao24": "495290", "iataCode": "A319" }, "airline": { "iataCode": "TP", "icaoCode": "TAP" }, "flight": { "iataNumber": "TP937", "icaoNumber": "TAP937", "number": "937" }, "system": { "updated": "1539025919", "squawk": "5754" }, "status": "en-route" },
+{ "geography": { "latitude": 43.0638, "longitude": -1.4306, "altitude": 11894.8, "direction": 207 }, "speed": { "horizontal": 907.48, "isGround": 0, "vertical": 0 }, "departure": { "iataCode": "BRU", "icaoCode": "EBBR" }, "arrival": { "iataCode": "RBA", "icaoCode": "GMME" }, "aircraft": { "regNumber": "CNROD", "icaoCode": "B737", "icao24": "020065", "iataCode": "B737" }, "airline": { "iataCode": "AT", "icaoCode": "RAM" }, "flight": { "iataNumber": "AT831", "icaoNumber": "RAM831", "number": "831" }, "system": { "updated": "1539025838", "squawk": "7166" }, "status": "en-route" },
+{ "geography": { "latitude": 42.1755, "longitude": -1.56362, "altitude": 11280.5, "direction": 286 }, "speed": { "horizontal": 896.81, "isGround": 0, "vertical": 0 }, "departure": { "iataCode": "TLV", "icaoCode": "LLBG" }, "arrival": { "iataCode": "OPO", "icaoCode": "LPPR" }, "aircraft": { "regNumber": "OMFEX", "icaoCode": "B738", "icao24": "505CD8", "iataCode": "B738" }, "airline": { "iataCode": "LY", "icaoCode": "ELY" }, "flight": { "iataNumber": "LY5163", "icaoNumber": "ELY5163", "number": "5163" }, "system": { "updated": "1539025976", "squawk": "4054" }, "status": "en-route" },
+{ "geography": { "latitude": 42.2634, "longitude": -1.9699, "altitude": 10066, "direction": 285 }, "speed": { "horizontal": 859.328, "isGround": 0, "vertical": 0 }, "departure": { "iataCode": "BCN", "icaoCode": "LEBL" }, "arrival": { "iataCode": "VGO", "icaoCode": "LEVX" }, "aircraft": { "regNumber": "ECMFK", "icaoCode": "A320", "icao24": "344694", "iataCode": "A320" }, "airline": { "iataCode": "VY", "icaoCode": "VLG" }, "flight": { "iataNumber": "VY1704", "icaoNumber": "VLG1704", "number": "1704" }, "system": { "updated": "1539025840", "squawk": "41" }, "status": "en-route" }]
